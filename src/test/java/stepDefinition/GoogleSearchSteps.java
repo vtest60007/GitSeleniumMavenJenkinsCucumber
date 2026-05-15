@@ -24,18 +24,7 @@ public class GoogleSearchSteps {
 //		driver.get(rp.ReadProperty("./src/test/resources/config.properties", "url"));
 //	}
 
-	@When("I search for a Keyword")
-	public void i_search_for_a_keyword() {
-		
-		GoogleSearch searchPage= new GoogleSearch(driver);			
-		searchPage.EnterKeyword("Testing");
-	}
-
-	@Then("I should see search results for Keyword")
-	public void i_should_see_search_results_for_keyword() {
-		//Assert.assertEquals(driver.getTitle(), "Google");
-		System.out.println("Search Completed");
-	}
+	
 
 	
 }
