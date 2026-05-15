@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 ,glue = "stepDefinition",
 monochrome=true,
 dryRun = false,
-plugin = {"pretty","html:target\\HtmlReport.html"}
+plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
 public class TestRunner extends  AbstractTestNGCucumberTests {
 
